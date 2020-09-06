@@ -1,37 +1,57 @@
-class user:
-  """
- class that will generate new users
-"""
-  user_detail = []
+class User:
+    """
+    Class that will generate new instances of users
+    """
 
-def save_detail(self)
-     
+    user_detail = []
+
+    def save_detail(self):
+
+        """
+        the method saves detail objects into the empty user_detail array
+        """
+        User.user_detail.append(self)
+
+    def delete_detail():
+
+        """
+        the delete_detail method is used to remove objects from the user detail array
+        """
+
+        User.user_detail.remove(self)
+
+    def __init__(self,account_name,username,password,confirm_password):
+
+        """
+        the __init__method helps us define properties for our objectsself.
+        """
+
+        self.account_name = account_name
+        self.username = username
+        self.password =password
+        self.confirm_password = confirm_password
 
 
-   """
-    append()	Adds an element at the end of the list
-   """
-   
+        """
+        arguments for our __init__method will include the following.
+        """
 
-User.user_detail.append(self)
+    @classmethod
+    def display_all_details(cls):
 
+        return cls.user_detail
 
-def delete_detail():
+    @classmethod
+    def find_by_username(cls,username):
 
+        for user in cls.user_detail:
+            if user.username == username:
+                return user
 
-    """"
-     remove()	Removes the item with the specified value
+    @classmethod
+    def user_exist(cls,username):
 
-    this method is used to remove objects fom the user detail array
+        for user in cls.user_detail:
+            if user.username == username:
+                    return True
 
-    """"
-    User.user_detail.remove(self)
-
-def _init_(self,account_name,username,password,confirm_password)
-
-
-    """"
-    created function to add user array
-    self is keyword that binds attributes
-    _init_  methd initializes attribute in the class
-    """"
