@@ -26,3 +26,12 @@ def delete_detail():
 
     """"
     User.user_detail.remove(self)
+
+def _init_(self,account_name,username,password,confirm_password)
+
+
+    """"
+    created function to add user array
+    self is keyword that binds attributes
+    _init_  methd initializes attribute in the class
+    """"
