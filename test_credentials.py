@@ -10,7 +10,7 @@ class TestCredential(unittest.TestCase):
     def setUp(self):
 
         """
-        this method runs before each test case, carries the instrctions of what is to be done
+        this method runs before each test case, carries the instructions of what is to be done
         """
 
         self.new_password = Credential("watinguyaz")
