@@ -1,9 +1,29 @@
 import unittest
-from credentials import Credentials
+from credentials import Credential
+class TestCredential(unittest.TestCase):
 
-class TestCredentials(unittest.TestCase):
+    """
+    Test class that defines test cases for the credential class behaviours,
+    the arguments help in creating test cases.
+    """
+
+    def setUp(self):
+
+        """
+        this method runs before each test case, carries the instrctions of what is to be done
+        """
+
+        self.new_password = Credential("watinguyaz")
+
+    def test_init(self):
+
+        """
+        used to test if the objects have been initialized properly
+        """
+
+        self.assertEqual(self.new_password.credential_detail,"watinguyaz")
 
 
-    '''
-    Test class that defines test cases for the contact class behaviours.
-    '''
+
+if __name__ == '__main__':
+    unittest.main()
