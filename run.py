@@ -110,7 +110,7 @@ def main():
 
             if ans == 'yes':
 
-                # genpas = print(generatePassword(10))
+                genpas = print(generatePassword(10))
 
                 save_details(create_account(account_name,username,password,confirm_password))
 
